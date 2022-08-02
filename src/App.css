@@ -1,39 +1,135 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #3655aa;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-center {
   align-items: center;
+}
+
+.justify-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.icon {
+  color: #0290ff;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.space-btn {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.header {
+  padding: 0.8rem 0.11rem 0.688rem 0.8rem;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 12px 15px;
+}
+
+.nav-link {
+  margin: 0 4px;
+  padding: 0 12px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  width: 3.688rem;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.home-screen {
+  background-color: #337db6;
+  padding: 24px;
+}
+
+.home-screen h2 {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.home-data {
+  list-style-type: none;
+}
+
+.data-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.item {
+  padding: 18px;
+  float: right;
+  text-align: right;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1;
+}
+
+.grid {
+  background: rgb(43, 103, 216);
+  height: 300px;
+  border: 0.2px solid rgb(145, 145, 145);
+}
+
+.data-title {
+  text-align: right;
+}
+
+.data-title h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  50% {
-    transform: translateY(10px);
+
+  .grid {
+    height: 200px;
   }
-  100% {
-    transform: translateY(0px);
-  }
+
 }
