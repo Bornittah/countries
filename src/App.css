@@ -100,7 +100,6 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1;
 }
 
 .grid {
@@ -113,14 +112,14 @@ body {
 
 .grid:hover {
   background-color: #b2b2b2;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .data-title {
   position: absolute;
   bottom: 0;
   float: right;
-  vertical-align: bottom; 
+  vertical-align: bottom;
 }
 
 .data-title h3 {
@@ -148,14 +147,15 @@ body {
   width: 100%;
 }
 
-.country-table td, .country-table th {
+.country-table td,
+.country-table th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-.country-table tr:nth-child(even){background-color: #38b1e0;}
+.country-table tr:nth-child(even){ background-color: #38b1e0; }
 
-.country-table tr:hover {background-color: rgb(18, 181, 231);}
+.country-table tr:hover { background-color: rgb(18, 181, 231); }
 
 .country-table th {
   padding-top: 12px;
@@ -172,5 +172,4 @@ body {
   .grid {
     height: 200px;
   }
-
 }
