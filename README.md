@@ -9,7 +9,7 @@ This project is a web application that shows major regions and countries in the 
 Click [here](https://listcountries.herokuapp.com/) to checkout the live demo
 
 ## Video presentation
-Here id the [video](https://drive.google.com/file/d/1ZxNb4sbT4hLGIOXL3_pO3L_9fPz860oh/view?usp=sharing)
+Here id the [video](https://www.loom.com/share/f25f8e9932ae4e28bdcc80d84e9fac2c)
 
 ## Getting Started
 
