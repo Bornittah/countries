@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 
-const Grid = ({ title, number, onClick }) => (
+const Grid = ({ title, number }) => (
   <div className="grid">
-    <div className="item">
-      <FaArrowAltCircleRight onClick={onClick} />
+    <Link to={`/continent/${title}`} className="link">
+      <FaArrowAltCircleRight />
       <div className="data-title">
         <h3>{title}</h3>
         <p>
@@ -12,20 +13,20 @@ const Grid = ({ title, number, onClick }) => (
           <span>Countries</span>
         </p>
       </div>
-    </div>
+      {/* <div className="item">
+      </div> */}
+    </Link>
   </div>
 );
 
 Grid.defaultProps = {
   title: null,
   number: null,
-  onClick: null,
 };
 
 Grid.propTypes = {
   title: PropTypes.string,
   number: PropTypes.number,
-  onClick: PropTypes.func,
 };
 
 export default Grid;
