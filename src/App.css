@@ -153,9 +153,9 @@ body {
   padding: 8px;
 }
 
-.country-table tr:nth-child(even){background-color: #f2f2f2;}
+.country-table tr:nth-child(even){background-color: #38b1e0;}
 
-.country-table tr:hover {background-color: #ddd;}
+.country-table tr:hover {background-color: rgb(18, 181, 231);}
 
 .country-table th {
   padding-top: 12px;
