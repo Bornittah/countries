@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { FaSearch } from 'react-icons/fa';
 import NavBar from './shared/NavBar';
 import Grid from './shared/Grid';
 import { fetchCountries } from '../redux/countries';
@@ -13,7 +14,8 @@ const Home = () => {
     ctrs.push(data.region);
     return ctrs;
   });
-  const regions = [...new Set(ctrs)];
+
+  let regions = [...new Set(ctrs)];
   const countCountries = (array, region) => array.filter((item) => item === region).length;
   const dispatch = useDispatch();
 
@@ -21,6 +23,13 @@ const Home = () => {
     dispatch(fetchCountries());
     setLoading(true);
   }, []);
+
+  const [searchText, setYourFilterText] = useState('');
+  regions = regions.filter((continent) => continent.toLowerCase()
+    .includes(searchText));
+  const handleChange = (e) => {
+    setYourFilterText(e.target.value.toLowerCase());
+  };
 
   return (
     <div>
@@ -37,6 +46,10 @@ const Home = () => {
             <span>Countries</span>
           </li>
         </ul>
+      </div>
+      <div className="search">
+        <input name="query" value={searchText} onChange={handleChange} placeholder="Search continent" className="searchTerm" />
+        <FaSearch className="searchButton" />
       </div>
       <div className="grid-container">
         {loading ? (

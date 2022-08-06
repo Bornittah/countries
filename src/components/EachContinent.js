@@ -1,18 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowLeft, FaSearch } from 'react-icons/fa';
 import NavBar from './shared/NavBar';
 import { fetchRegionDetails } from '../redux/countries';
 
 const EachContent = () => {
-  const regionDetails = useSelector((state) => state.entities.countries);
+  let regionDetails = useSelector((state) => state.entities.countries);
 
   const { title } = useParams();
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRegionDetails(title));
   }, []);
+
+  const [searchText, setYourFilterText] = useState('');
+  regionDetails = regionDetails.filter((country) => country.name.common.toLowerCase()
+    .includes(searchText));
+  const handleChange = (e) => {
+    setYourFilterText(e.target.value.toLowerCase());
+  };
 
   return (
     <div>
@@ -35,6 +42,10 @@ const EachContent = () => {
         </ul>
       </div>
       <div>
+        <div className="search">
+          <input name="query" value={searchText} onChange={handleChange} placeholder="Search Country" className="searchTerm" />
+          <FaSearch className="searchButton" />
+        </div>
         <ul className="grid-container">
           { regionDetails.map((country) => (
             <Link to={`/country/${country.name.common}`} key={country.name.common} className="link">
