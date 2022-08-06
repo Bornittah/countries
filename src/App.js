@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import EachContent from './components/EachContent';
+import EachContinent from './components/EachContinent';
 import Country from './components/Country';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/continent/:title" element={<EachContent />} />
+          <Route path="/continent/:title" element={<EachContinent />} />
           <Route path="/country/:name" element={<Country />} />
         </Routes>
       </Router>

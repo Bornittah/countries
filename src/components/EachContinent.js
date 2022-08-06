@@ -7,6 +7,7 @@ import { fetchRegionDetails } from '../redux/countries';
 
 const EachContent = () => {
   const regionDetails = useSelector((state) => state.entities.countries);
+
   const { title } = useParams();
   const dispatch = useDispatch();
   useEffect(() => {

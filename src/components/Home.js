@@ -7,6 +7,7 @@ import { fetchCountries } from '../redux/countries';
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const countries = useSelector((state) => state.entities.countries);
+
   const ctrs = [];
   countries.map((data) => {
     ctrs.push(data.region);
