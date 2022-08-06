@@ -35,10 +35,8 @@ Navigate to the project
 Run `npm start` to serve the project
 ### Run tests
 Run `npm test`
-### Deployment
-Run `npm run deploy` on your terminal
 
-## Authors
+## Author
 
 👤 **Agasha Bornittah**
 
@@ -58,10 +56,8 @@ Feel free to check the [issues page](https://github.com/Bornittah/countries/issu
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
+-[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the [original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/Bornittah/countries/blob/dev/LICENSE) licensed.
