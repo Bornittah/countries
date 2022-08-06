@@ -57,21 +57,18 @@ body {
   padding: 12px 15px;
 }
 
-.nav-link {
-  margin: 0 4px;
-  padding: 0 12px;
-}
-
-.nav-link a {
+.link {
   text-decoration: none;
-  width: 3.688rem;
-  font-size: 0.813rem;
+  font-size: 1.2rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
+  color: inherit;
+}
+
+.link:hover {
+  color: rgb(226, 126, 126);
 }
 
 .home-screen {
@@ -93,12 +90,12 @@ body {
   font-weight: 700;
 }
 
-.item {
+/* .item {
   padding: 18px;
   float: right;
-  text-align: right;
   height: 100%;
-}
+  position: relative;
+} */
 
 .grid-container {
   display: grid;
@@ -110,10 +107,20 @@ body {
   background: rgb(43, 103, 216);
   height: 300px;
   border: 0.2px solid rgb(145, 145, 145);
+  position: relative;
+  padding: 18px;
+}
+
+.grid:hover {
+  background-color: #b2b2b2;
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .data-title {
-  text-align: right;
+  position: absolute;
+  bottom: 0;
+  float: right;
+  vertical-align: bottom; 
 }
 
 .data-title h3 {
@@ -121,7 +128,19 @@ body {
   font-weight: 700;
 }
 
+.flag {
+  width: 100px;
+  margin-right: 18px;
+}
 
+.coat-of-arm {
+  width: 28rem;
+  height: 13rem;
+}
+
+.country-list {
+  margin: 8px 24px;
+}
 
 @media screen and (max-width: 768px) {
   .grid-container {
