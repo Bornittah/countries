@@ -13,8 +13,6 @@ const Grid = ({ title, number }) => (
           <span>Countries</span>
         </p>
       </div>
-      {/* <div className="item">
-      </div> */}
     </Link>
   </div>
 );

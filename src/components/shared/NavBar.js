@@ -1,16 +1,15 @@
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import { FaSearch, FaGlobe } from 'react-icons/fa';
+import { FaGlobe } from 'react-icons/fa';
 
 const NavBar = ({ title }) => (
   <header className="header">
     <nav>
-      <ul className="menu flex space-btn">
-        <li>
+      <ul className="menu flex">
+        <li className="flex-1">
           <Link to="/" className="link"><FaGlobe /></Link>
         </li>
-        <li>{title}</li>
-        <li><FaSearch /></li>
+        <li className="flex-1">{title}</li>
       </ul>
     </nav>
   </header>
