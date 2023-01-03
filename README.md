@@ -6,7 +6,7 @@ This project is a web application that shows major regions and countries in the 
 - Eslintrc and Stylelintrc Linters
 
 ## Live Demo (if available)
-Click [here](https://listcountries.herokuapp.com/) to checkout the live demo
+Click [here](https://countries-lld8.onrender.com/) to checkout the live demo
 
 ## Video presentation
 Here id the [video](https://www.loom.com/share/f25f8e9932ae4e28bdcc80d84e9fac2c)
